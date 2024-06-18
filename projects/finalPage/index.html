@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo/favicon.png">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/slide.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="./styles/account.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="firstHeader">
+            <div class="sectionSector">
+                <select name="select" class="languageSelect">
+                    <option value="en" selected>EN</option>
+                    <option value="hy">HY</option>
+                    <option value="ru">RU</option>
+                  </select>
+                <select name="select" class="languageSelect">
+                    <option value="USD" selected>USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="AMD">AMD</option>
+                  </select>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="PegistrationSignIn">
+                <p>+123 456 789 </p>
+                <p>Sign in</p>
+                <p>Register</p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo/pageLogo.jpg" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">HOW IT WORK</a>
+                    </li>
+                    <li>
+                        <a href="#">EXPLORE</a>
+                    </li>
+                    <li>
+                        <a href="#">REVIEW</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="welcomeConatainer">
+            <img src="./img/welcome-hero/banner1.jpg" alt="IMG">
+            <div class="textInImg">
+
+                <h1>BEST PLACE TO FIND AND EXPLORE THAT ALL YOU NEED</h1>
+                <p id="paragraf">Find Best Place, Restaurant, Hotel, Real State and many think in just One click.</p>
+                <div class="searchContainer">
+                    <div class="inputContainer">
+                        <form id="whatLocation">
+                            <label for="what">What?</label>
+                            <input type="text" name="what" id="what" placeholder="Ex:Place,Restaurant, Food, Automobile">
+                            <i class="fa fa-list" aria-hidden="true" style="margin: 0 46px 0 22px;"></i>
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" placeholder="Ex:London, New York, Rome">
+                            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                        </form>
+                    </div>
+                    <div class="button">
+                        <button type="button" onclick="search()">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+
+                </div>
+                <div class="cardContainer">
+                    <div class="card">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        <h2>Restaurant</h2>
+                        <p>150 listings</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                        <h2>Destination</h2>
+                        <p>185 listing</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <h2>Hotels</h2>
+                        <p>185 listing</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-stethoscope" aria-hidden="true"></i>
+                        <h2>Healthcaree</h2>
+                        <p>200 listings</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <h2>Automation</h2>
+                        <p>120 listing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secondCardContainer">
+            <h2>HOW IT WORK</h2>
+            <p>Learn More about how our website works</p>
+            <div class="treeCardContainer">
+                <div class="cardTree">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <h3>Cloose what to Do</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque corporis molestiae eum laudantium sapiente ratione?</p>
+                    <button>Read More</button>
+                </div>
+                <div class="cardTree" style="margin: 0 30px 0 30px;">
+                    <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+                    <h3>Find what you want</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi ducimus libero temporibus deleniti totam.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="cardTree">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h3>Find what you want</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi ducimus libero temporibus deleniti totam.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="placeConatainer">
+            <div class="placeTitel">
+                <h2>EXPLORE</h2>
+                <p>Explore New place, food, culter araund the world and more</p>
+            </div>
+
+            <!-- _________________________________________________________________________________ -->
+            <div class="cards">
+                <div class="firstTree">
+                    <div class="placeCard" id="placeCard1">
+                        <div class="hoverElem">
+                            <img src="./img/explore/e1.jpg" alt="img" onmouseover="hover()">
+                            <div class="elem">
+                                <p class="paragrafIMG">Best Rated</p>
+                                <i class="fa fa-arrows-alt" aria-hidden="true" id="icon"></i>
+                                <i class="fa fa-bookmark-o" aria-hidden="true" id="icon1"></i>
+                            </div>
+                        </div>
+
+                        <h3>Tommy Helfinger Bar</h3>
+                        <div class="line">
+                            <p class="reting" style="background-color: rgb(89, 89, 238);">5.0</p>
+                            <p class="retingCount">10 Ratings</p>
+                            <p>Form <samp style="color: #f2415a;">5$-300$</samp></p>
+                            <p class="type">Restaurant</p>
+                        </div>
+                        <div class="client">
+                            <img src="./img/explore/person.png" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dolores, distinctio nesciunt deleniti fuga molestiae...</p>
+                        </div>
+                        <div class="secondLine">
+                            <p style="color: #f2415a;">Cloose Now</p>
+                            <div class="icons">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <i class="fa fa-download" aria-hidden="true" style="margin: 0 10px 0 10px;"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- _____________________________________________________ -->
+
+                    <div class="placeCard" id="placeCard2">
+                        <div class="hoverElem">
+                            <img src="./img/explore/e2.jpg" alt="img" onmouseover="hoverTwo()">
+                            <div class="elemTwo">
+                                <p class="paragrafIMG">Best Rated</p>
+                                <i class="fa fa-arrows-alt" aria-hidden="true" id="icon2"></i>
+                                <i class="fa fa-bookmark-o" aria-hidden="true" id="icon3"></i>
+                            </div>
+                        </div>
+                        <h3>Swim And Dine Resort</h3>
+                        <div class="line">
+                            <p class="reting" style="background-color: #6fee34;">4.5</p>
+                            <p class="retingCount">8 Ratings</p>
+                            <p>Form <samp style="color: #f2415a;">50$-500$</samp></p>
+                            <p class="type">Hotel</p>
+                        </div>
+                        <div class="client">
+                            <img src="./img/explore/person.png" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dolores, distinctio nesciunt deleniti fuga molestiae...</p>
+                        </div>
+                        <div class="secondLine">
+                            <p style="color: #6fee34;">Open Now</p>
+                            <div class="icons">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <i class="fa fa-download" aria-hidden="true" style="margin: 0 10px 0 10px;"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ________________________________________________________ -->
+                    <div class="placeCard" id="placeCard3">
+                        <div class="hoverElem">
+                            <img src="./img/explore/e3.jpg" alt="img" onmouseover="hoverTree()">
+                            <div class="elemTree">
+                                <p class="paragrafIMG" id="theOther">Best Rated</p>
+                                <i class="fa fa-arrows-alt" aria-hidden="true" id="icon4"></i>
+                                <i class="fa fa-bookmark-o" aria-hidden="true" id="icon5"></i>
+                            </div>
+                        </div>
+                        <h3>Europ Tour</h3>
+                        <div class="line">
+                            <p class="reting" style="background-color: rgb(252, 187, 67);">5.0</p>
+                            <p class="retingCount">15 Ratings</p>
+                            <p>Form <samp style="color: #f2415a;">5k$-10k$</samp></p>
+                            <p class="type">Destination</p>
+                        </div>
+                        <div class="client">
+                            <img src="./img/explore/person.png" alt="img">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dolores, distinctio nesciunt deleniti fuga molestiae...</p>
+                        </div>
+                        <div class="secondLine">
+                            <p style="color: #f2415a;">Close Now</p>
+                            <div class="icons">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <i class="fa fa-download" aria-hidden="true" style="margin: 0 10px 0 10px;"></i>
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ________________________________________________________ -->
+            <div class="secondTree">
+                <div class="placeCard" id="placeCard4">
+                    <div class="hoverElem">
+                        <img src="./img/explore/e4.jpg" alt="img" onmouseover="hoverFour()">
+                        <div class="elemFour">
+                            <p class="paragrafIMG" id="otherTwo">Best Rated</p>
+                            <i class="fa fa-arrows-alt" aria-hidden="true" id="icon6"></i>
+                            <i class="fa fa-bookmark-o" aria-hidden="true" id="icon7"></i>
+                        </div>
+                    </div>
+                    <h3>Europ Tour</h3>
+                    <div class="line">
+                        <p class="reting" style="background-color: rgb(158, 64, 245);">5.0</p>
+                        <p class="retingCount">10 Ratings</p>
+                        <p>Form <samp style="color: #f2415a;">10k$-15k$</samp></p>
+                        <p class="type">Real Estate</p>
+                    </div>
+                    <div class="client">
+                        <img src="./img/explore/person.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dolores, distinctio nesciunt deleniti fuga molestiae...</p>
+                    </div>
+                    <div class="secondLine">
+                        <p style="color: #f2415a;">Close Now</p>
+                        <div class="icons">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <i class="fa fa-download" aria-hidden="true" style="margin: 0 10px 0 10px;"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ________________________________________________________ -->
+                <div class="placeCard" id="placeCard5">
+                    <div class="hoverElem">
+                        <img src="./img/explore/e5.jpg" alt="img" onmouseover="hoverFive()">
+                        <div class="elemFive">
+                            <p class="paragrafIMG" id="otherTree">Best Rated</p>
+                            <i class="fa fa-arrows-alt" aria-hidden="true" id="icon8"></i>
+                            <i class="fa fa-bookmark-o" aria-hidden="true" id="icon9"></i>
+                        </div>
+                    </div>
+                    <h3>Vintage Car Expo</h3>
+                    <div class="line">
+                        <p class="reting" style="background-color: #6fee34;">4.5</p>
+                        <p class="retingCount">8 Ratings</p>
+                        <p>Form <samp style="color: #f2415a;">500$-1200$</samp></p>
+                        <p class="type">Hotel</p>
+                    </div>
+                    <div class="client">
+                        <img src="./img/explore/person.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dolores, distinctio nesciunt deleniti fuga molestiae...</p>
+                    </div>
+                    <div class="secondLine">
+                        <p style="color: #6fee34;">Open Now</p>
+                        <div class="icons">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <i class="fa fa-download" aria-hidden="true" style="margin: 0 10px 0 10px;"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- ________________________________________________________ -->
+                <!-- ________________________________________________________ -->
+                <div class="placeCard" id="placeCard6">
+                    <div class="hoverElem">
+                        <img src="./img/explore/e6.jpg" alt="img" onmouseover="hoverSix()">
+                        <div class="elemSix">
+                            <p class="paragrafIMG" id="otherFour">Best Rated</p>
+                            <i class="fa fa-arrows-alt" aria-hidden="true" id="icon10"></i>
+                            <i class="fa fa-bookmark-o" aria-hidden="true" id="icon11"></i>
+                        </div>
+                    </div>
+                    <h3>Europ Tour</h3>
+                    <div class="line">
+                        <p class="reting" style="background-color: #f35832;">5.0</p>
+                        <p class="retingCount">10 Ratings</p>
+                        <p>Form <samp style="color: #f2415a;">10k$-15k$</samp></p>
+                        <p class="type">Real Estate</p>
+                    </div>
+                    <div class="client">
+                        <img src="./img/explore/person.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iure dolores, distinctio nesciunt deleniti fuga molestiae...</p>
+                    </div>
+                    <div class="secondLine">
+                        <p style="color: #f2415a;">Close Now</p>
+                        <div class="icons">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <i class="fa fa-download" aria-hidden="true" style="margin: 0 10px 0 10px;"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ________________________________________________________ -->
+        <!-- Ստեղ անելու բան կա -->
+        </div>
+        </div>
+        <div class="slideTitel">
+            <h2>CLIENTS REWIEWS</h2>
+            <p>What our claents say about us</p>
+        </div>
+        <div class="slideContainer">
+
+            <button id="privat" onclick="praviteSlide()"> 
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+            <div class="slider">
+
+                <div class="slide">
+                    <div class="clientTwo" id="one">
+                        <div class="upPart">
+                            <img src="./img/clients/c1.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+                    <div class="clientTwo" id="two">
+                        <div class="upPart">
+                            <img src="./img/clients/c2.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+
+                    <div class="clientTwo" id="tree">
+                        <div class="upPart">
+                            <img src="./img/clients/c3.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+                    <div class="clientTwo" id="four">
+                        <div class="upPart">
+                            <img src="./img/clients/c4.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+                </div>
+                <!-- ______________________________________ -->
+                <div class="slide">
+                    <div class="clientTwo" id="one2">
+                        <div class="upPart">
+                            <img src="./img/clients/c2.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+                    <div class="clientTwo" id="two2">
+                        <div class="upPart">
+                            <img src=".//img/clients/c1.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+
+                    <div class="clientTwo" id="tree2">
+                        <div class="upPart">
+                            <img src="./img/clients/c4.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+                    <div class="clientTwo" id="four2">
+                        <div class="upPart">
+                            <img src="./img/clients/c3.png" alt="img">
+                            <div class="infoClient">
+                                <h3>Shohrob Hossain</h3>
+                                <p>London, UK</p>
+                                <div class="stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="next" onclick="nextSlide()">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+     </button>
+        </div>
+        <div class="numberPart">
+            <div class="imgAndNumber">
+                <img src="./img/counter/counter-banner.jpg" alt="Img">
+                <div class="number">
+                    <p>90K+ <samp>Listing</samp></p>
+                    <p>40K+ <samp>Listing Categories</samp></p>
+                    <p>65K+ <samp>Visitors</samp></p>
+                    <p>50K+ <samp>Happy Client</samp></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="blogContainer">
+            <div class="blogTitel">
+                <h2>NEWS AND ARTICLES</h2>
+                <p>Always upto date with our latest News and Articles</p>
+            </div>
+            <div class="blogBox">
+                <div class="blog" id="blogOne">
+                    <img src="./img/blog/b1.jpg" alt="img">
+                    <h3>How to find your Desired Place mare quickly</h3>
+                    <div class="post">
+                        <p class="person">Posted By <samp>ADMIN</samp></p>
+                        <p class="date">March 2018</p>
+                    </div>
+                    <p class="postP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur id asperiores hic voluptas reiciendis est nemo incidunt tempore!</p>
+                </div>
+                <div class="blog" id="blogTwo">
+                    <img src="./img/blog/b2.jpg" alt="img">
+                    <h3>How to find your Desired Place mare quickly</h3>
+                    <div class="post">
+                        <p class="person">Posted By <samp>ADMIN</samp></p>
+                        <p class="date">March 2018</p>
+                    </div>
+                    <p class="postP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur id asperiores hic voluptas reiciendis est nemo incidunt tempore!</p>
+                </div>
+                <div class="blog" id="blogTree">
+                    <img src="./img/blog/b3.jpg" alt="img">
+                    <h3>How to find your Desired Place mare quickly</h3>
+                    <div class="post">
+                        <p class="person">Posted By <samp>ADMIN</samp></p>
+                        <p class="date">March 2018</p>
+                    </div>
+                    <p class="postP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur id asperiores hic voluptas reiciendis est nemo incidunt tempore!</p>
+                </div>
+            </div>
+        </div>
+        <div class="account">
+            <div class="accountTitel">
+                <h2>DO YOU WANT TO ADD YOUR BUSINES LISTING WITH US?</h2>
+                <p>Listrace offer you to list your busines with us and we very much able to promote your Business.</p>
+            </div>
+            <div id="emailForm">
+                <form id="form">
+                    <div class="inputButton">
+                        <input type="text" id="email" placeholder="Enter your email here">
+                    </div>
+                </form>
+                <button onclick="dataBase()">Creat Account</button>
+            </div>
+            <div class="error">
+                <p> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Something is wrong, please enter volid email </p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="topPart">
+            <img src="./img/logo/pageLogo.jpg" alt="logo">
+            <div class="footerNav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">HOW IT WORKS</a>
+                        </li>
+                        <li>
+                            <a href="#">EXPLORE</a>
+                        </li>
+                        <li>
+                            <a href="#">REVIEW</a>
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="#">MY ACCOUNT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="downPart">
+            <div id="ccright"></div>
+            <div class="contactUS">
+                <p><i class="fa fa-phone" aria-hidden="true"></i> +1 (222)777 8888
+                </p>
+                <div class="iconWithHover">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script/index.js"></script>
+    <script src="./script/slide.js"></script>
+</body>
+
+</html>

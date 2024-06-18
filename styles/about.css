@@ -1,0 +1,253 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .logoCoanatiner img {
+        width: 170px;
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .navBar nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navBar nav ul li a {
+        margin-right: 50px;
+        margin-top: 20px;
+        color: black;
+    }
+    
+    .firstPart {
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 60%;
+        }
+        h1 {
+            width: 40%;
+            font-size: 131px;
+            background-color: rgb(2, 2, 68);
+            color: white;
+        }
+    }
+    
+    .paragraf {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        text-align: center;
+        margin-left: 442px;
+        p {
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 40px;
+            margin-top: 70px;
+            margin-bottom: 40px;
+        }
+    }
+    
+    footer {
+        margin-top: 100px;
+        background-color: #6c7f51;
+    }
+    
+    .socCanc {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 1px solid #313131;
+        i {
+            background-color: #313131;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            color: white;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 20px 30px 20px;
+        }
+    }
+    
+    #footerNav {
+        margin-top: 90px;
+        width: 500px;
+        margin-left: 470px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    #ccright {
+        text-align: center;
+        color: #afa6a6;
+    }
+
+    /* Media queries */
+@media (max-width: 1200px) {
+    .navBar nav ul li a {
+        margin-right: 30px;
+    }
+
+    .paragraf {
+        width: 400px;
+        margin-left: 200px;
+    }
+
+    .paragraf p {
+        font-size: 18px;
+    }
+
+    .paragraf h2 {
+        font-size: 35px;
+    }
+
+    .firstPart h1 {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBar nav ul li a {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .firstPart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firstPart img {
+        width: 80%;
+    }
+
+    .firstPart h1 {
+        width: 100%;
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .paragraf {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .paragraf p {
+        font-size: 18px;
+    }
+
+    .paragraf h2 {
+        font-size: 30px;
+    }
+
+    footer .socCanc i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 20px 10px 20px 10px;
+    }
+
+    #footerNav {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar nav ul li a {
+        margin-top: 5px;
+        margin-right: 0;
+    }
+
+    .firstPart img {
+        width: 100%;
+    }
+
+    .firstPart h1 {
+        font-size: 60px;
+    }
+
+    .paragraf {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .paragraf p {
+        font-size: 16px;
+    }
+
+    .paragraf h2 {
+        font-size: 25px;
+    }
+
+    footer .socCanc {
+        flex-direction: column;
+    }
+
+    footer .socCanc i {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navBar nav ul li a {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .firstPart h1 {
+        font-size: 35px;
+    }
+
+    .paragraf p {
+        font-size: 14px;
+    }
+
+    .paragraf h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .socCanc i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    #footerNav {
+        margin: 10px 0;
+    }
+}

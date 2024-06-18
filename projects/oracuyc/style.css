@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6c6ff;
+}
+
+.calendarFirst {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.calendarSecond {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ccc;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #81C2D1;
+}
+
+a {
+    text-decoration: none;
+    color: #DA2828;
+}

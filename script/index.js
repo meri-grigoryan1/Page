@@ -1,0 +1,1 @@
+document.getElementById("ccright").innerHTML = " &copy; Copyright" + new Date().getFullYear() + " - Designed and Developped By Meri";

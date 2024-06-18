@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logoCoanatiner img {
+    width: 170px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navBar nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar nav ul li a {
+    margin-right: 50px;
+    margin-top: 20px;
+    color: black;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    border: 1px solid black;
+    width: 110%;
+    height: 500px;
+    padding: 48px;
+}
+
+.contacts {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+input:focus {
+    outline: unset;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(63, 29, 1);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 95px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #6c7f51;
+}
+
+.socCanc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #313131;
+    i {
+        background-color: #313131;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        font-size: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 20px 30px 20px;
+    }
+}
+
+#footerNav {
+    margin-top: 90px;
+    width: 500px;
+    margin-left: 470px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#ccright {
+    text-align: center;
+    color: #afa6a6;
+}
+/* Media queries */
+@media (max-width: 1200px) {
+    .navBar nav ul li a {
+        margin-right: 30px;
+    }
+
+    .inputContainer {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBar nav ul li a {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .inputContainer {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    footer .socCanc i {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin: 20px 10px 20px 10px;
+    }
+
+    #footerNav {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar nav ul li a {
+        margin-top: 5px;
+        margin-right: 0;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .inputContainer {
+        width: 100%;
+        padding: 16px;
+    }
+
+    footer .socCanc {
+        flex-direction: column;
+    }
+
+    footer .socCanc i {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navBar nav ul li a {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .inputContainer {
+        width: 100%;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .socCanc i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    #footerNav {
+        margin: 10px 0;
+    }
+}
